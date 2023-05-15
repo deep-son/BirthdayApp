@@ -6,7 +6,21 @@ import boto3
 import time
 
 def lambda_handler(event, context):
-    
+    '''
+    Description:
+    This function retrieves a list of birthdays from an Amazon RDS MySQL database instance, and sends birthday messages via Amazon SNS to a specified topic for those birthdays occurring on the next day.
+
+    Parameters:
+
+    event: An event object that contains data passed to the function.
+    context: An object containing information about the current execution context.
+
+    Returns:
+    This function does not have a return value, but publishes birthday messages to a specified Amazon SNS topic.
+
+    Example Usage:
+    This function can be scheduled to run daily using AWS Lambda and AWS CloudWatch Events, to send birthday messages for upcoming birthdays.
+    '''
     records = []
     rds_host  = os.environ['rds_host']
     user_name = os.environ['user_name']

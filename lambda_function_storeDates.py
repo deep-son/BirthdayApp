@@ -6,6 +6,20 @@ import random
 import os
 
 def lambda_handler(event, context):
+    '''
+    Description:
+    This function is used to handle incoming events from API Gateway and store the form data into a MySQL database instance hosted on Amazon RDS.
+
+    Parameters:
+
+    event: An event object that contains data passed to the function.
+    context: An object containing information about the current execution context.
+    Returns:
+    A dictionary with a status code and response message.
+
+    Example Usage:
+    This function can be deployed as an AWS Lambda function and used to handle form submissions from a web application.
+    '''
     # rds settings
     rds_host  = os.environ['rds_host']
     user_name = os.environ['user_name']
