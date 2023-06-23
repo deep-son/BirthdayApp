@@ -35,14 +35,3 @@ To install and run the Data Collection and Reminder System locally, follow these
 3. Subscribed individuals will receive event reminders based on the processed data.
 4. Monitor the application and perform regular maintenance tasks to ensure smooth operation.
 
-## Contributing
-
-Contributions to the Data Collection and Reminder System project are welcome! If you have any suggestions, bug reports, or feature requests, please submit them as GitHub issues or make a pull request with your proposed changes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to modify and distribute the code as per the license terms.
-
-## Acknowledgements
-
-We would like to express our gratitude to the open-source community for their valuable contributions and the developers behind the technologies used in this project, including Google Forms, AWS Lambda, and AWS databases.
